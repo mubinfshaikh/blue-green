@@ -27,7 +27,7 @@ metadata:
   labels:
     app: nginx-blue-green
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: nginx-blue-green
   ports:
