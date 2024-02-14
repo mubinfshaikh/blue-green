@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: blue-green-service
   annotations:
-    link.argocd.argoproj.io/external-link: http://cloudsoult.com
+    link.argocd.argoproj.io/external-link: http://65.2.38.107
   labels:
     app: nginx-blue-green
 spec:
