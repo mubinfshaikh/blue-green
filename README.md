@@ -9,7 +9,8 @@ Make sure you have the following tools installed and configured:
 - Docker
 - Kubernetes
 - Ingress controller (e.g., Nginx Ingress Controller)
-
+- ArgoCD (optional)
+  
 ## Getting Started
 
 1. Clone this repository to your local machine:
