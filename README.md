@@ -16,7 +16,7 @@ Make sure you have the following tools installed and configured:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/mubinfshaikh/k8s-ingress-pathbased-routing.git
+git clone https://github.com/mubinfshaikh/k8s-path-based-routing-demo.git
 cd k8s-ingress-pathbased-routing
 ```
 2. Build the Docker image:
