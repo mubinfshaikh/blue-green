@@ -22,11 +22,17 @@ cd k8s-ingress-pathbased-routing
    ```
    docker build -t nginx-blue-green .
    ```
-3. Deploy the Docker image to your Kubernetes cluster:
+3. Push to image to your docker hub repo:
+   ```
+   docker login
+   docker tag nginx-blue-green mubinskh/nginx-blue-green:latest
+   docker push mubinskh/nginx-blue-green:latest
+   ```
+4. Deploy the Docker image to your Kubernetes cluster:
    ```
    kubectl apply -f kubernetes/deployment.yml
    ```
-4. Deploy ingress to your kubernetes cluster:
+5. Deploy ingress to your kubernetes cluster:
    ```
    kubectl apply -f kubernetes/ingress.yml
    ```
@@ -37,6 +43,5 @@ Once the setup is complete, you can access the following URLs:
 http://yourdomain.com/green - Welcome to the Green Page (served by green.html)
 http://yourdomain.com/blue - Welcome to the Blue Page (served by blue.html)
 
-License
-This project is licensed under the MIT License.
+
 
