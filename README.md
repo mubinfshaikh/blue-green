@@ -37,7 +37,8 @@ cd k8s-ingress-pathbased-routing
    kubectl apply -f kubernetes/ingress.yml
    ```
 
-Usage
+Usage  
+
 Once the setup is complete, you can access the following URLs:
 
 http://yourdomain.com/green - Welcome to the Green Page (served by green.html)
